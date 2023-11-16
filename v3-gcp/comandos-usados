@@ -1,0 +1,25 @@
+# agregar el cluster a kubectl
+gcloud container clusters get-credentials ---- nombre cluster --region=europe-west2
+- Ahi que agregar el nombre del cluster y la region del cluster --region=
+
+ helm install version3 hybridaccess1/ -f deployment-v3.yaml
+
+ helm upgrade version3 hybridaccess1/ -f deployment-v3.yaml
+
+ entrar en el resource-manager-cli a este path
+ /opt/hybrid/resource-cli/bin#
+ aqui usar 
+ php resource region-zone:list
+ php resource component:register device-log-receiver-listener ##  con este comando registramos todo lo que necesita la app
+ y de paso hacemos que todos los containers que estan mal, se levanten
+ php resource component:list   ## con este componente revisamos que todo este bien.
+ luego debemos ir al container de authenticacion y entrar en /var/www/cli
+ # php cli.php setup:add-auth-client "devops" "hola" "administrator"
+ esto te da un ssh key
+ el estado de saludo de los containers se corrige cuando se le da de alta dentro del sistema
+ de momento tengo update-provisioner-sever y el log-store-ztp-receiver rotos.
+
+ Es necesario encontrar la otra GUI para poder gestionar el recurso,
+ Una de las GUI es para el CUSTOMER Y EL OTRO ES PARA EL MANAGEMENT
+
+

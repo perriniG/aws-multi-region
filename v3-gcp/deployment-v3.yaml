@@ -1,0 +1,18 @@
+deploymentType: "gcp"
+#tykAPIExtIp: "10.20.0.20"
+#smvUiIp: "10.20.0.30"
+#mqttExtIp: "10.20.0.40"
+#mqttUtExtIp: "10.20.0.50"
+#MrUiExtIp: "10.20.0.60"
+
+timezone: "Europe/London"
+
+global:
+  repositoryUrl: "xxxxxx"
+  #repository: "xxxxxxxxxxxxx"
+  repositoryUser: "xxxxx"
+  repositoryPassword: "xxxx"
+
+  ## only form on-premisses
+#storage:
+  enabled: disable
